@@ -24,7 +24,7 @@
   {{ range .Params.tags }}
   <meta property="og:tags" content="{{ . }}">
   {{ end }}
-  <link rel="icon" href="{{ "/favicon.ico" | relURL }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/images/favicon.png" | relURL }}" type="image/x-icon">
   <link rel="canonical" href="{{ .Permalink }}">
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -60,7 +60,7 @@
   <div class="navbar">
     <div class="logo">
       <a href="{{ "/" | relURL }}">
-        <img src="{{ "/images/logo.png" | relURL }}" height="34px" />
+        <img src="{{ "/images/logo.png" | relURL }}" height="40" />
       </a>
     </div>
     <div class="burger">
