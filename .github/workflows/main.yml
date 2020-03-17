@@ -29,4 +29,5 @@ jobs:
       with:
         target_branch: gh-pages
         build_dir: public
-        key: ${{ secrets.ACCESS_TOKEN }}
+      env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
