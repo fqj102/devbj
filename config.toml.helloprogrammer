@@ -1,0 +1,17 @@
+baseURL = "https://devbj.com/"
+title = "오늘을살자"
+#languageCode = "en-us"
+theme = "hugo-hello-programmer-theme"
+#paginate = 5
+languageCode = "kr-ko"
+disqusShortname = "ghdevbj"
+googleAnalytics = "UA-54433728-4"
+#googleSiteVerification = "22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ"
+paginate = 7
+
+[author]
+    name = "Bongjun Hur"
+    email = "bjnhur@gmail.com"
+
+[params]
+    description = "오늘을 차분히 정리해 보는 글들을 적어봅니다. 기술 일상 잡학 경제"
