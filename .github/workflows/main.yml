@@ -40,15 +40,16 @@ jobs:
     - name: Build
       run: |
         hugo --minify        
-        cd public
-        echo "devbj.com" > CNAME
-        cd ..
+#        cd public
+#        echo "devbj.com" > CNAME
+#        cd ..
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         publish_dir: ./public
+        CNAME: "devbj.com"
 
 #    - name: Hugo Build
 #      uses: jakejarvis/hugo-build-action@v0.67.1
