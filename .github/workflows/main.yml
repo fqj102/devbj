@@ -25,7 +25,6 @@ jobs:
       uses: jakejarvis/hugo-build-action@v0.67.1
   
     - name: Deploy
-      if: steps.check-commit.outputs.committed == 'true'
       uses: crazy-max/ghaction-github-pages@v1
       with:
         target_branch: gh-pages
