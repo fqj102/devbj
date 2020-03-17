@@ -1,4 +1,4 @@
-baseURL = "http://devbj.com/"
+baseURL = "https://devbj.com/"
 languageCode = "en-us"
 theme = "hello-friend"
 paginate = 5
