@@ -1,4 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
     font-family: "Noto Sans KR",Inter,-apple-system,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }
