@@ -22,8 +22,8 @@ enableGitInfo = true
   startLevel = 1
 
 [author]
-    name = "Bongjun Hur"
-    email = "bjnhur@gmail.com"
+  name = "Bongjun Hur"
+  email = "bjnhur@gmail.com"
 
 [menu]
 # [[menu.before]]

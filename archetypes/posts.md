@@ -4,5 +4,4 @@ date: {{ .Date }}
 categories: []
 tags: []
 cover: ""
-#draft: true
 ---
