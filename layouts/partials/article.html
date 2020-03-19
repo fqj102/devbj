@@ -1,4 +1,3 @@
-{{ partial "adsense.html" . }}
 <div class="content">
   <article id="{{ .Params.layout }}-{{ .Params.slug }}" class="article article-type-{{ .Params.layout }}" itemscope
     itemtype="http://schema.org/BlogPosting">
@@ -9,6 +8,7 @@
       {{ .Scratch.Set "class_name" "article-title" }}
       {{- partial "post/title.html" . }}
       {{- end }}
+      {{ partial "adsense.html" . }}
       <div class="article-meta">
         {{ .Scratch.Set "class_name" "article-date" }}
         {{- partial "post/date.html" . }}
