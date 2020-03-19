@@ -125,6 +125,15 @@ params:
   highlightjs:
     langs: ["python", "javascript"] # refer to http://staticfile.org/, search highlight.js, already have highlight.min.js
 
+  # Thanks to book theme, code from book theme
+  # Set source repository location.
+  # Used for 'Last Modified' and 'Edit this page' links.
+  BookRepo: 'https://github.com/bjnhur/blog'
+  # Enable "Edit this page" links for 'doc' page type.
+  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
+  # Path must point to 'content' directory of repo.
+  BookEditPath: 'edit/master/content'
+
   # Allows you to specify an override stylesheet
   # put custom.css in $hugo_root_dir/static/
   # customCSS: css/custom.css
@@ -145,8 +154,8 @@ params:
     enabled: true # Whether to show profile bar
     avatar: avatar.png
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: devBJ
-    author_title: TBD
+    author: DevBJ
+    author_title: TBD...ing
     author_description: Good Good Study, Day Day Up~
     location: Seoul, Korea
     follow: https://github.com/bjnhur
@@ -166,7 +175,7 @@ params:
       width: 40
       height: 40
       url: favicon.png
-    title: Hugo # 页面title
+    title: "오늘을살자" # 页面title
     favicon: favicon.png
     board: <p>enjoy~</p> # 公告牌
 
