@@ -1,8 +1,6 @@
----
-menu:
-#  after:
-  before:
-    name: blog
-    weight: 1
-title: 블로그 글모음
----
++++
+aliases = ["posts","articles","blog","showcase","docs"]
+title = "Posts"
+author = "Hugo Authors"
+tags = ["index"]
++++
