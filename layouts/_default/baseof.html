@@ -33,7 +33,6 @@
     {{- if and (.Site.Params.sidebar) (or (ne .Params.sidebar "none") (ne .Params.sidebar "custom"))}}
         {{- partial "sidebar.html" . }}
     {{end}}
-    {{- partial "gcse-search.html" . }}
     {{ block "content" . }}{{ end }}
     {{- partial "footer.html" . }}
     {{- partial "script.html" . }}
