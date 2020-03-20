@@ -174,10 +174,10 @@ params:
       enabled: true
       width: 40
       height: 40
-      url: favicon.png
+      url: favicon.ico
     title: "오늘을살자" # 页面title
-    favicon: favicon.png
-    board: <p>enjoy~</p> # 公告牌
+    favicon: favicon.ico
+    board: <p>매일매일즐겁게~~</p> # 公告牌
 
   # Share
   # weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin
