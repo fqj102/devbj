@@ -17,17 +17,6 @@
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             {{- end }}
-            {{ with .Site.Params.config.toc }}
-            <li class="toggle-toc">
-                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
-                    title="{{ T "article_catalogue" }}" role="button">
-                    <span>[&nbsp;</span><span>{{ T "article_catalogue" }}</span>
-                    <i class="text-collapsed icon icon-anchor"></i>
-                    <i class="text-in icon icon-close"></i>
-                    <span>]</span>
-                </a>
-            </li>
-            {{- end }}
         </ul>
         {{- end }}
         {{- $donate := .Site.Params.donate}}

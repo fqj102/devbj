@@ -1,0 +1,16 @@
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    {{ if .Site.Params.config.toc }}
+    <div class="widget">
+        <h3 class="widget-title">{{ T "article_catalogue" }}</h3>
+        <div class="widget-body">
+            <nav id="toc" class="js-toc toc"></nav>
+        </div>
+    </div>
+    {{ end }}
+    {{ range $w := .Site.Params.widgets }}
+      <!-- $ 传递全局上下文 -->
+      {{- partial  (printf "_widgets/%s.html" $w) $ }}
+    {{- end }}
+  </div>
+</aside>
