@@ -10,7 +10,7 @@ aliases = ["about-us","contact"]
 
 ## 주인장
 크게 적을 내용도 없네요. 그래서 중간중간 흔적 남겨놓은 개인 정보를 흘리고 다닌 사이트를 몇개로 대신합니다.
-* [링크드인](https://linkedin.com/bjnhur)
+* [링크드인](https://www.linkedin.com/in/bjnhur/)
 * [티스토리 블로그](https://ts.devbj.com)
 * [GitHub](https://github.com/bjnhur/)
 * [Twitter](https://twitter.com/bongjunhur)
