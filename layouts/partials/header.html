@@ -23,7 +23,30 @@
       <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
         <ul class="nav navbar-nav main-nav {{- with .Site.Params.config.menu_highlight }}  menu-highlight {{- end}}">
           {{- $icon := .Site.Params.menuIcons }}
+          {{ $currentPage := . }}
           {{- range .Site.Menus.main -}}
+          {{ if .HasChildren }}
+          {{- $lowerItemName := lower .Name}}
+              <li class="menu-item menu-item-{{- $lowerItemName}}">
+                  <a href="{{- .URL | safeURL }}">
+                    {{- with $icon.enable }}
+                    {{- range $name,$value := $icon}}
+                      {{- if eq $name $lowerItemName }}
+                      <i class="icon {{- print " " $value }}"></i>
+                      {{- end}}
+                    {{- end }}
+                    {{- end}}
+                    <span class="menu-title">{{- .Title  }}</span>
+                  </a>
+              </li>
+              <ul class="sub-menu">
+                  {{ range .Children }}
+                      <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                          <a href="{{ .URL }}">{{ .Name }}</a>
+                      </li>
+                  {{ end }}
+              </ul>
+          {{ else }}
             {{- $lowerItemName := lower .Name}}
             <li class="menu-item menu-item-{{- $lowerItemName}}">
                 <a href="{{- .URL | safeURL }}">
@@ -37,6 +60,7 @@
                   <span class="menu-title">{{- .Title  }}</span>
                 </a>
             </li>
+          {{ end }}
           {{- end}}
         </ul>
       </nav>

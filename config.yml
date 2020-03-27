@@ -12,11 +12,13 @@ permalinks:
   posts: /:slug/
   #posts: /:year/:month/:filename/
 summaryLength: 50
+sectionPagesMenu: "main"
 
 taxonomies:
     category : categories
     tag : tags
     series : series
+
 outputFormats:          # use for search. recommend not to modify
   SearchIndex:
     mediaType: "application/json"
