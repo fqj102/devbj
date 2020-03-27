@@ -1,4 +1,4 @@
-baseURL: /blog/
+baseURL: "https://devbj.com/"
 theme: pure
 title: 오늘을살자
 defaultContentLanguage: en  # en/zh/...
