@@ -10,6 +10,7 @@ PygmentsCodeFences: false
 googleAnalytics: "UA-54433728-4"      # UA-XXXXXXXX-X
 permalinks:
   posts: /:year/:month/:filename/
+summaryLength: 50
 
 taxonomies:
     category : categories

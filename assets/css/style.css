@@ -19,8 +19,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');} @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
 html {
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -252,7 +255,7 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 16px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -447,32 +450,32 @@ h6 .small,
 
 h1,
 .h1 {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 h2,
 .h2 {
-    font-size: 26px;
+    font-size: 1.5em;
 }
 
 h3,
 .h3 {
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 h4,
 .h4 {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 h5,
 .h5 {
-    font-size: 14px;
+    font-size: 1em;
 }
 
 h6,
 .h6 {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 p {
@@ -481,7 +484,7 @@ p {
 
 .lead {
     margin-bottom: 21px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.4;
 }
@@ -1099,7 +1102,7 @@ address {
     border: 1px solid transparent;
     white-space: nowrap;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 1em;
     line-height: 1.57143;
     border-radius: 4px;
     -webkit-user-select: none;
@@ -1578,21 +1581,21 @@ fieldset[disabled] .btn-link:focus {
 
 .btn-lg {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 1.33333;
     border-radius: 6px;
 }
 
 .btn-sm {
     padding: 5px 10px;
-    font-size: 12px;
+    font-size: 1em;
     line-height: 1.5;
     border-radius: 3px;
 }
 
 .btn-xs {
     padding: 1px 5px;
-    font-size: 12px;
+    font-size: .8em;
     line-height: 1.5;
     border-radius: 3px;
 }
@@ -1682,7 +1685,7 @@ tbody.collapse.in {
     padding: 5px 0;
     margin: 2px 0 0;
     list-style: none;
-    font-size: 14px;
+    font-size: 1em;
     text-align: left;
     background-color: #fff;
     border: 1px solid #ccc;
@@ -1767,7 +1770,7 @@ tbody.collapse.in {
 .dropdown-header {
     display: block;
     padding: 3px 20px;
-    font-size: 12px;
+    font-size: 1em;
     line-height: 1.57143;
     color: #777777;
     white-space: nowrap;
@@ -1847,7 +1850,6 @@ tbody.collapse.in {
 
 .input-group-addon {
     padding: 6px 12px;
-    font-size: 14px;
     font-weight: normal;
     line-height: 1;
     color: #555555;
@@ -1861,7 +1863,6 @@ tbody.collapse.in {
 .input-group-sm>.input-group-addon,
 .input-group-sm>.input-group-btn>.input-group-addon.btn {
     padding: 5px 10px;
-    font-size: 12px;
     border-radius: 3px;
 }
 
@@ -1869,7 +1870,7 @@ tbody.collapse.in {
 .input-group-lg>.input-group-addon,
 .input-group-lg>.input-group-btn>.input-group-addon.btn {
     padding: 10px 16px;
-    font-size: 18px;
+    font-size: 1.2em;
     border-radius: 6px;
 }
 
@@ -2206,7 +2207,6 @@ tbody.collapse.in {
 .navbar-brand {
     float: left;
     padding: 14.5px 15px;
-    font-size: 18px;
     line-height: 21px;
     height: 50px;
 }
@@ -2549,7 +2549,6 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
     display: inline-block;
     min-width: 10px;
     padding: 3px 7px;
-    font-size: 12px;
     font-weight: bold;
     color: #fff;
     line-height: 1;
@@ -2763,7 +2762,6 @@ a.thumbnail.active {
 
 .close {
     float: right;
-    font-size: 24px;
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
@@ -2932,7 +2930,6 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     font-style: normal;
     font-weight: normal;
     letter-spacing: normal;
@@ -2947,7 +2944,6 @@ button.close {
     word-break: normal;
     word-spacing: normal;
     word-wrap: normal;
-    font-size: 12px;
     opacity: 0;
     filter: alpha(opacity=0);
 }
@@ -3245,8 +3241,6 @@ body {
 
 body {
     padding-right: 0 !important;
-    font-family: "Source Han Sans", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 14px;
     line-height: 1.57143;
     color: #333333;
     background-color: #fff;
@@ -3375,7 +3369,6 @@ svg {
 }
 
 .text-white .accordion-list p {
-    font-size: 12px;
     height: 84px;
     line-height: 21px;
     color: rgba(255, 255, 255, 0.8);
@@ -4341,7 +4334,7 @@ legend {
     width: 100%;
     padding: 0;
     margin-bottom: 21px;
-    font-size: 21px;
+    font-size: 2em;
     line-height: inherit;
     color: #333333;
     border: 0;
@@ -4391,7 +4384,6 @@ input[type="checkbox"]:focus {
 output {
     display: block;
     padding-top: 7px;
-    font-size: 14px;
     line-height: 1.57143;
     color: #555555;
 }
@@ -4401,7 +4393,6 @@ output {
     width: 100%;
     height: 35px;
     padding: 6px 12px;
-    font-size: 14px;
     line-height: 1.57143;
     color: #555555;
     background-color: #fff;
@@ -4499,7 +4490,6 @@ input[type="search"] {
 .list-square li:before {
     color: #ccc;
     content: "▪";
-    font-size: 12px;
     margin-right: 6px;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -4523,7 +4513,6 @@ input[type="search"] {
     height: 24px;
     text-align: center;
     border-radius: 12px;
-    font-size: 15px;
     border-width: 1px;
     border-style: solid;
     margin: 0 16px 0 0;
@@ -4538,7 +4527,6 @@ input[type="search"] {
     height: 24px;
     text-align: center;
     border-radius: 5px;
-    font-size: 15px;
     border-width: 1px;
     border-style: solid;
     margin: 0 16px 0 0;
@@ -4563,7 +4551,6 @@ input[type="search"] {
     height: 24px;
     text-align: center;
     border-radius: 12px;
-    font-size: 15px;
     border-width: 1px;
     border-style: solid;
     margin: 0 16px 0 0;
@@ -4578,7 +4565,6 @@ input[type="search"] {
     height: 24px;
     text-align: center;
     border-radius: 5px;
-    font-size: 15px;
     border-width: 1px;
     border-style: solid;
     margin: 0 16px 0 0;
@@ -4692,7 +4678,6 @@ a.label:focus {
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    font-size: 18px;
     line-height: 32px;
     height: 64px;
     word-break: break-all !important;
@@ -4725,7 +4710,6 @@ a.label:focus {
 .panel-title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 16px;
     color: inherit;
 }
 
@@ -4885,7 +4869,6 @@ a.label:focus {
 /* Button fancy */
 .btn-fancy {
     display: inline-block;
-    font-size: 17px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #ffffff;
@@ -4912,7 +4895,6 @@ a.label:focus {
 .btn-fancy i {
     margin-top: -1px;
     margin-right: 20px;
-    font-size: 1.265em;
     vertical-align: middle;
 }
 
@@ -5523,7 +5505,6 @@ pre {
     margin: 10px 0;
     padding: 15px 10px;
     overflow: auto;
-    font-size: 13px;
     color: #4d4d4c;
     line-height: 1.5;
 }
@@ -5540,7 +5521,6 @@ code {
     color: #555;
     background: #eee;
     border-radius: 3px;
-    font-size: 100%;
 }
 
 pre code {
@@ -5777,13 +5757,11 @@ body.no-sidebar .sidebar {
 }
 
 #name {
-    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 0;
 }
 
 #title {
-    font-size: 13px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -5922,7 +5900,6 @@ body.no-sidebar .sidebar {
 }
 
 .main .article-meta {
-    font-size: 13px;
     color: #999;
 }
 
@@ -5968,13 +5945,11 @@ body.no-sidebar .sidebar {
 }
 
 .widget .widget-title {
-    font-size: 18px;
     color: #000;
 }
 
 .widget time {
     color: #999;
-    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -6023,7 +5998,6 @@ body.no-sidebar .sidebar {
 .tag-list li:before {
     color: #ccc;
     content: "▪";
-    font-size: 12px;
     margin-right: 6px;
     -webkit-transition: 0.2s ease;
     transition: 0.2s ease;
@@ -6162,7 +6136,7 @@ body.no-sidebar .sidebar {
 }
 
 .footer .copyright {
-    font-size: 12px;
+    font-size: 80%;
 }
 
 .footer .copyright a {
@@ -6233,7 +6207,7 @@ body.no-sidebar .sidebar {
     text-align: center;
     background-color: #2196f3;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 2em;
     color: #fff;
     z-index: 2;
 }
@@ -6331,7 +6305,6 @@ body.no-sidebar .sidebar {
 .repo-title {
     padding: 0 15px;
     margin: 15px 0;
-    font-size: 16px;
     font-weight: 600;
 }
 
@@ -6363,7 +6336,6 @@ body.no-sidebar .sidebar {
     margin-top: 5px;
     margin-bottom: 15px;
     color: #777;
-    font-size: 12px;
     text-align: right;
 }
 
@@ -6437,11 +6409,9 @@ body.no-sidebar .sidebar {
 }
 
 .article-list .article-title {
-    font-size: 18px;
 }
 
 .article-toc .toc-title {
-    font-size: 18px;
     color: #000;
 }
 
@@ -6738,7 +6708,6 @@ body.okayNav-loaded {
 
 .social-share {
     display: inline-block;
-    font-size: 16px;
 }
 
 .social-share a {
@@ -6824,7 +6793,6 @@ body.okayNav-loaded {
     width: 200px;
     height: 200px;
     color: #666;
-    font-size: 12px;
     text-align: center;
     background-color: #fff;
     -webkit-transition: all 200ms;
@@ -6846,7 +6814,6 @@ body.okayNav-loaded {
     font-weight: normal;
     height: 26px;
     line-height: 26px;
-    font-size: 12px;
     background-color: #f3f3f3;
     margin: 0;
     padding: 0;
@@ -6909,7 +6876,6 @@ body.okayNav-loaded {
     line-height: 50px;
     padding: 0;
     border-radius: 50%;
-    font-size: 18px;
     cursor: pointer;
     z-index: 99;
 }
@@ -6946,19 +6912,16 @@ body.okayNav-loaded {
     text-align: center;
     line-height: 60px;
     color: #a3a3a3;
-    font-size: 16px;
     position: relative;
 }
 
 .donate-box .donate-head:before,
 .donate-box .donate-head:after {
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
     background: none;
     width: 0px;
     height: 0px;
     font-style: normal;
     color: #eee;
-    font-size: 100px;
     position: absolute;
     top: 15px;
 }
@@ -7031,7 +6994,6 @@ body.okayNav-loaded {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 16px;
     -webkit-box-shadow: none;
     box-shadow: none;
     font-weight: 200;
@@ -7042,7 +7004,6 @@ body.okayNav-loaded {
     box-sizing: border-box;
     padding: 12px 28px 12px 20px;
     border-bottom: 1px solid #e2e2e2;
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .ins-close {
@@ -7050,7 +7011,6 @@ body.okayNav-loaded {
     right: 6px;
     width: 20px;
     height: 20px;
-    font-size: 24px;
     margin-top: -15px;
     position: absolute;
     text-align: center;
@@ -7089,7 +7049,6 @@ body.okayNav-loaded {
 }
 
 .ins-section {
-    font-size: 14px;
     line-height: 16px;
 }
 
@@ -7129,7 +7088,6 @@ body.okayNav-loaded {
 
 .ins-section .ins-search-item .ins-search-preview {
     height: 15px;
-    font-size: 12px;
     color: #9a9a9a;
     margin: 5px 0 0 20px;
 }
@@ -7401,7 +7359,6 @@ body.okayNav-loaded {
 
 @media (min-width: 768px) {
     .lead {
-        font-size: 21px;
     }
 
     .dl-horizontal dt {
@@ -8625,7 +8582,6 @@ body.okayNav-loaded {
     }
 
     .header #title {
-        font-size: 15px;
     }
 }
 

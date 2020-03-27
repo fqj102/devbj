@@ -19,7 +19,7 @@
       </div>
       {{- if .Summary }}
       <div class="article-entry text-muted" itemprop="description">
-        {{- .Summary -}}
+        {{ .Summary | safeHTML }}
       </div>
       {{- end }}
       <p class="article-meta">
