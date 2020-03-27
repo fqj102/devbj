@@ -5,7 +5,7 @@ description = "WizFi360 믄서정리 페이지"
 tags = ["wizfi","wireless","IoT",]
 categories = ["product","wizfi",]
 series = ["Wi-Fi Products"]
-weight = 2
+#weight = 2
 +++
 
 # WizFi360 - Documents

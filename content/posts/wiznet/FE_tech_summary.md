@@ -10,7 +10,7 @@ tags = [
     "javascript",
 ]
 categories = [
-    "development",
+    "IoT",
 ]
 series = ["IoT Cloud Solution"]
 +++
