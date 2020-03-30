@@ -27,14 +27,12 @@
               {{ if .HasChildren }}
                 {{- $lowerItemName := lower .Name}}
                 <li class="menu-item menu-item-{{- $lowerItemName}}">
-                  menu###############
                   <a href="{{- .URL | safeURL }}">
                     {{if .Pre}}{{.Pre}}{{else}}<i class='icon icon-folder'></i>{{end}}
                     <span class="menu-title">{{- .Title  }}</span>
                   </a>
                 </li>
                 <ul class="sub-menu">
-                  submenu###############
                   {{ range .Children }}
                       <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
                           <a href="{{ .URL }}">{{ .Name }}</a>
@@ -53,6 +51,7 @@
           {{- end}}
         </ul>
       </nav>
+
       <div id="adsection" class="hidden-xs hidden-sm">
           <ins class="adsbygoogle"
                style="display:block"
