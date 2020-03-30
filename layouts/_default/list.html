@@ -1,10 +1,26 @@
 {{- define "content"}}
-{{$pages := $.Scratch.Get "pages"}}
 <main class="main" role="main">
+
+    {{ $paginator := .Paginate (where .Pages "Params.hidden" "ne" true) }}
+    {{ $pages := $paginator.Pages }}
+<!--
+    {{ range sort $pages }}
+    <article class="markdown book-post">
+      <h1 itemprop="title">{{ .Title }}</h1>
+      <p>
+        {{- .Summary -}}
+        {{ if .Truncated }}
+          <a href="{{ .RelPermalink }}">...</a>
+        {{ end }}
+      </p>
+    </article>
+    {{ end }}
+-->
     <article class="content article article-archives article-type-list" itemscope="">
         <header class="article-header">
             <h1 itemprop="title">{{ .Title }}</h1>
             <p class="text-muted">{{- T "total_article" (len $pages) }}</p>
+            <p> {{- partial "breadcrumb.html" . }}  </p>
         </header>
         <div class="article-body">
             {{ $emptyDatePages := slice}}
@@ -42,7 +58,7 @@
             {{- end}}
             {{- if $emptyDatePages}}
             </div></div></div></section>
-            <section class="panel panel-default b-no">
+            <section class="panel panel-default b-no">qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
                 <div class="panel-heading" role="tab">
                     <h3 class="panel-title">
                         <a data-toggle="collapse" href="#collapse-other" aria-expanded="true">

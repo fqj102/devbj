@@ -4,5 +4,5 @@
         {{- .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}
     </time>
     {{- end }}
-    {{- .Title }}
+    {{ if eq .Kind "section" }}<i class="icon icon-folder"></i> Folder - {{end}}{{- .Title }}
 </a>

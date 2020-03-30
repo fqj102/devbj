@@ -41,30 +41,35 @@ menu:
       title: Home
       url: /
       weight: 1
+      pre: <i class='icon icon-home-fill'></i>
 
     - identifier: archives
       name: Archives
       title: Archives
       url: /posts/
       weight: 2
+      pre: <i class='icon icon-archives-fill'></i>
 
     - identifier: categories
       name: Categories
       title: Categories
       url: /categories/
       weight: 3
+      pre: <i class='icon icon-folder'></i>
 
     - identifier: tags
       name: Tags
       title: Tags
       url: /tags/
       weight: 4
+      pre: <i class='icon icon-tags'></i>
 
     - identifier: about
       name: About
       title: About
       url: /about/
       weight: 5
+      pre: <i class='icon icon-cup-fill'></i>
 
 markup:
   defaultMarkdownHandler: goldmark
@@ -124,17 +129,6 @@ params:
   # Allows you to specify an override stylesheet
   # put custom.css in $hugo_root_dir/static/
   customCSS: css/custom.css
-
-  menuIcons:
-    enable: true  # 是否启用导航菜单图标
-    home: icon-home-fill
-    archives: icon-archives-fill
-    categories: icon-folder
-    tags: icon-tags
-    repository: icon-project
-    books: icon-book-fill
-    links: icon-friendship
-    about: icon-cup-fill
 
   # profile
   profile:
