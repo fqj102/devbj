@@ -5,6 +5,9 @@ date = "2020-03-31"
 tags = [
     "hugo","blog","github"
 ]
+categories = [
+    "blog",
+]
 +++
 
 Hugo 자동 배포용 깃허브 액션 스크립트 소개

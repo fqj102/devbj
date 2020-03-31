@@ -6,6 +6,9 @@ description = "휴고 테마 싹 정리하기"
 tags = [
     "hugo","blog",
 ]
+categories = [
+    "blog",
+]
 +++
 
 git submodule 로 등록되어 있는 안쓰는 테마들을 싹 다 정리해보자!!
