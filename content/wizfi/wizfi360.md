@@ -3,7 +3,7 @@ title = "WizFi360"
 date = "2020-03-24"
 description = "WizFi360 소개페이지"
 tags = ["wizfi","wireless","IoT",]
-categories = ["product","wizfi",]
+categories = ["wizfi",]
 series = ["Wi-Fi Products"]
 #weight = 1
 +++
