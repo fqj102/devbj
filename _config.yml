@@ -1,0 +1,22 @@
+# Setup
+title:               devbj.com
+tagline:             '개인 프로필 페이지 - 간단한 소개와 개인 사이트 소개가 있습니다.'
+description:         '어서오세요 :)'
+url:                 https://dev.com
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Bongjun Hur
+  url:               https://twitter.com/bongjunhur
+  email:             bjnhur@gmail.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+version:             1.1.0
+google_analytics_id: #UA-XXXX-Y
