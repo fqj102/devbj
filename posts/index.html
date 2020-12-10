@@ -1,0 +1,56 @@
+---
+layout: page
+title: Posts
+description: 전체 글 목록 입니다. 시간 순서대로 정렬되어 있습니다. ^~^
+background: 'https://paper-attachments.dropbox.com/s_821968C8851BA5C2EBDD3D8EA16AE011D5F3C622D3BE08FE7F6662459A58B00D_1599005912684_m_StockSnap_2I760LW1NM.jpg'
+---
+
+{% for post in paginator.posts %}
+<article class="post-preview">
+  <p class="post-meta">Posted on {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
+  <h4 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+  <p>{{ post.excerpt | strip_html | truncatewords: 45 }}</p>
+</article>
+
+<hr>
+
+{% endfor %}
+
+<!-- Pagination -->
+{% if paginator.total_pages > 1 %}
+<nav aria-label="...">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+    <li class="page-item">
+      <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}" tabindex="-1"><span>&laquo; Prev</span></a>
+    </li>
+    {% else %}
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1"><span>&laquo; Prev</span></a>
+    </li>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="page-item active">
+        <a class="page-link" href="#">{{ page }} <span class="sr-only">(current)</span></a>
+      </li>
+    {% elsif page == 1 %}
+      <li class="page-item"><a class="page-link" href="{{ site.paginate_path | relative_url | replace: '/page:num', ''}}">{{ page }}</a></li>
+    {% else %}
+      <li class="page-item"><a class="page-link" href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+  
+  {% if paginator.next_page %}
+  <li class="page-item">
+    <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+  </li>
+  {% else %}
+  <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1"><span>Next &raquo;</span></a>
+  </li>
+  {% endif %}
+  </ul>
+</nav>
+{% endif %}

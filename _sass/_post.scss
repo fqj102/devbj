@@ -1,0 +1,23 @@
+// Styling for the post page
+.post-preview {
+    > .post-title {
+      margin:0;
+    }
+// > a {
+//     color: #00aaff;
+//     @include transition-all;
+//     &:focus,
+//     &:hover {
+//       color: #ffffff;
+//       background-color: deepskyblue;
+//     }
+//     // > .post-subtitle {
+//     // }
+//   }
+  > .post-meta {
+    font-size: 1rem;
+    font-style: italic;
+    margin: 0 ;
+    // color: $gray-600;
+  }
+}

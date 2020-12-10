@@ -1,0 +1,145 @@
+// Global styling for this template
+body {
+  font-size: 1.2em;
+  color: $gray-900;
+  // line-height: 1.5;
+  @include sans-serif-font;
+}
+
+// p {
+//   // line-height: 1.5;
+//   margin: 0 0 1rem 0;
+//   a {
+//     text-decoration: underline;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+  @include sans-serif-font;
+  font-weight: 700;
+  letter-spacing: -0.0375em;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+a {
+  color: dodgerblue;
+  @include transition-all;
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: deepskyblue;
+  }
+}
+
+blockquote {
+  margin: 0 .8em;
+  border-left: 2px solid $gray-600;
+  padding: 0 1em;
+  font-style: italic;
+  color: $gray-600;
+}
+
+img {
+  max-width: 100%; 
+  height: auto;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+#adbar {margin: auto;}
+.g {color: #ffffff; background-color: #409d00;}
+.r {color: #ffffff; background-color: #d05050;}
+.b {color: #ffffff; background-color: #0593d3;}
+@media screen and (max-width: 1023px) {
+  #bz_adsense {
+    display: none;
+  }
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// https://cofs.tistory.com/188 [CofS]
+a#MOVE_TOP_BTN {
+  cursor: pointer; position: fixed; right: 2%; bottom: 50px; display: block; z-index: 999;
+}
+
+.taglist {
+  margin: 0 0 2em 0;
+}
+.taglist a {
+  display: inline-block;
+  padding: 0px 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.section-heading {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.caption {
+  font-style: italic;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+::-moz-selection {
+  color: $white;
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  color: $white;
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  color: $white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: $white;
+  background: transparent;
+}

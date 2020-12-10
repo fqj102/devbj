@@ -1,22 +1,86 @@
 # Setup
-title:               devbj.com
-tagline:             '개인 프로필 페이지 - 간단한 소개와 개인 사이트 소개가 있습니다.'
-description:         '어서오세요 :)'
-url:                 https://dev.com
-baseurl:             ''
-paginate:            5
-permalink:           pretty
+title:            devbj.com v.2021
+url:              https://devbj.com
+paginate:         15
+paginate_path:    "/posts/page:num/"
+baseurl: ""
+#permalink:       pretty
+permalink:        /:title
+timezone:         Asia/Seoul
+#locale : "ko-KR"
+description:      "IT, Computer, IoT, Network, Tech 관련 기사/자료 모음 간단한 개인 의견 첨언 정도, 기술관련 내용 정리를 위한 블로그"
 
-# About/contact
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  # syntax_highlighter: rouge
+  # syntax_highlighter_opts:
+  #   # Use existing pygments syntax highlighting css
+  #   css_class: 'highlight'
+  # # Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
 author:
-  name:              Bongjun Hur
-  url:               https://twitter.com/bongjunhur
-  email:             bjnhur@gmail.com
+  name: Bongjun Hur
+  url: https://twitter.com/bongjunhur
+  email: bjnhur@gmail.com
+
+# Custom vars
+version: 3.0.0
+googleads: true # true / false
+
+github:
+  repository_edit_url: "https://github.com/bjnhur/devbj/edit/master/"
+
+# head.html 로 이동 
+# Navbar page list
+# nav:
+#   - title: 전체글
+#     url: /posts
+#   - title: 카테고리
+#     url: /category
+#   - title: 태그
+#     url: /tags
+#   - title: 북마크
+#     url: /bookmark
 
 # Gems
 plugins:
+  - jekyll-coffeescript
+  - jekyll-gist
+#  - jekyll-github-metadata
   - jekyll-paginate
+#  - jekyll-relative-links
+#  - jekyll-optional-front-matter
+#  - jekyll-readme-index
+#  - jekyll-default-layout
+#  - jekyll-titles-from-headings
 
-# Custom vars
-version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
+  - jekyll-feed
+  #- jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  #- jekyll-avatar
+  #- jemoji
+  #- jekyll-mentions
+  #- jekyll-include-cache
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md

@@ -1,0 +1,34 @@
+---
+layout: page
+title: Tags
+description: 태그 별로 나열된 글 목록 입니다. 상단에 태크명을 클릭하면 해당 섹션으로 이동합니다. ^~^
+permalink : /tags/
+---
+
+<h2>태그 리스트</h2>
+<div class="taglist">
+{%  for tag in site.tags %}
+<!-- tag_name 변수 지정: 태그명은 소문자화(slugize) 한다 -->
+{% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
+<!-- tag_size 변수 지정-->
+{% capture tag_size %}{{tag|last|size}}{% endcapture %}
+<!-- font_size 변수 지정: 태그해당글숫자/전체글숫자 * 20 + 14 -->
+{% capture font_size %}{{tag_size | times: 20 | divided_by:site.posts.size | plus: 14 }}{% endcapture %}
+<a href="#{{tag_name}}" style="font-size:{{font_size}}px">#{{ tag_name }} ({{ tag_size }})</a>
+{% endfor %}
+</div>
+<h2>태그별 글 목록</h2>
+{% for tag in site.tags %}
+{% capture tag_name %}{{tag|first|slugize}}{% endcapture %}
+<div id="{{tag_name}}"></div>
+<hr>
+<h3>{{tag_name}}</h3>
+<ul>
+{% for post in site.tags[tag_name] %}
+{% if post.title != null %}
+<li>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>&nbsp;&nbsp;<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
+</li>
+{% endif %}{% endfor %}
+</ul>
+{% endfor %}

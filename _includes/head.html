@@ -1,37 +1,50 @@
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-
-  <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
-
-  {% if page.url and site.baseurl %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
-
-  <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/public/css/lanyon.css' | absolute_url }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
-
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-precomposed.png' | absolute_url }}">
-  <link rel="shortcut icon" href="{{ '/public/favicon.ico' | absolute_url }}">
-
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
-
-  {% if site.google_analytics_id %}
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{ site.google_analytics_id }}', 'auto');
-    ga('send', 'pageview');
-  </script>
-  {% endif %}
+<script data-ad-client="ca-pub-3059347231702682" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-site-verification" content="22jTInxspNEYVGE9rJEvduzUaLBCnmsBqFADkXiksEQ">
+<meta name="naver-site-verification" content="b5043c00a6a3a1f1d8ea3050cb9c5f123c2efc53">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="robots" content="ALL">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="article:modified_time" content="{{ page.last_modified_at | default:page.date | date_to_xmlschema }}" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"url":"{{ page.url | replace:'index.html','' | absolute_url }}",
+"name":"{{ page.title }}",
+"headline":"{{ page.title }}",
+{% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}
+"keywords":"{% for tag in tags %}{{tag}}{% unless forloop.last %},{% endunless %}{% endfor %}",
+"description":"{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}",
+"datePublished":"{{ page.date | date_to_xmlschema }}",
+"dateModified": "{{ page.date | date_to_xmlschema }}",
+"author" : {"@type" : "Person", "name" : "{{ site.author.name }}"},
+"mainEntityOfPage":{"@id":"{{ page.url | replace:'index.html','' | absolute_url }}"}
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54433728-13"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-54433728-13');
+</script>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/assets/apple-touch-icon-precomposed.png' | relative_url }}">
+<link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+<!-- Bootstrap CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;700&family=Noto+Serif+KR:wght@200;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
 </head>
